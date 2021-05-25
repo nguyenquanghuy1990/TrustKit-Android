@@ -289,7 +289,7 @@ public class TrustKit {
         }
 
         // On Android N, ensure that the system was also able to load the policy
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N) {
             // This will need to be updated/double-checked for subsequent versions of Android
             int systemConfigResId = getNetSecConfigResourceId(context);
             if (systemConfigResId == -1) {
